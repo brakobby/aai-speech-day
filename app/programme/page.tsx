@@ -370,7 +370,7 @@ export default function Programme() {
     <>
       <PageHero
         title="Programme"
-        subtitle="End of Year Awards Ceremony, 4th July 2026"
+        subtitle="End of Year Awards Ceremony, 6th June 2026"
       />
 
       <section className="section">

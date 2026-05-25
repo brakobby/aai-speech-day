@@ -18,7 +18,7 @@ export default function InfoStrip() {
           <div>
             <div className="info-label">Date &amp; Time</div>
             <div className="info-value">
-              Friday, 4th July 2026<br />
+              Saturday, 6th June 2026<br />
               Ceremony begins at 12:00 PM
             </div>
           </div>

@@ -53,7 +53,7 @@ export default function Home() {
             <span className="notice-label">Official Notice</span>
             <p>
               The <strong>Annual Speech and Prize Giving Day</strong> of Agape Academy
-              International will be held on <strong>Friday, 4th July 2026</strong>, commencing
+              International will be held on <strong>Saturday, 6th June 2026</strong>, commencing
               at 12:00 PM. Students, parents, guardians, old students, and invited guests are
               warmly welcome to attend.
             </p>
@@ -107,7 +107,7 @@ export default function Home() {
               </h2>
               <div className="about-rule" />
               <p>
-                Each July, Agape Academy International pauses to recognise the achievements
+                Each June, Agape Academy International pauses to recognise the achievements
                 of its students across every discipline. The Annual Speech and Prize Giving
                 Day is the school&apos;s highest public ceremony, bringing together the academic
                 community, families, and dignitaries.

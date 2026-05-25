@@ -34,7 +34,7 @@ export default function Download() {
                 </h3>
                 <span>Official Programme Booklet</span>
                 <span style={{ fontSize: 10, color: 'rgba(255,255,255,.2)', marginTop: 6, letterSpacing: '.1em', textTransform: 'uppercase' }}>
-                  28th Annual Ceremony &middot; 4th July 2026
+                  28th Annual Ceremony &middot; 6th June 2026
                 </span>
               </div>
             </div>
@@ -55,7 +55,7 @@ export default function Download() {
                   { l: 'Format',   v: 'PDF, Print-ready' },
                   { l: 'Pages',    v: '52 pages' },
                   { l: 'Edition',  v: '28th Annual' },
-                  { l: 'Date',     v: '4th July 2026' },
+                  { l: 'Date',     v: '6th June 2026' },
                   { l: 'Language', v: 'English' },
                   { l: 'Size',     v: 'A4' },
                 ].map(({ l, v }) => (
@@ -79,7 +79,7 @@ export default function Download() {
                   </svg>
                   <div className="download-btn-info">
                     Download Full Booklet
-                    <span className="download-btn-sub">Available from 27th June 2026</span>
+                    <span className="download-btn-sub">Available from 30th May 2026</span>
                   </div>
                 </button>
 
@@ -94,7 +94,7 @@ export default function Download() {
                   </svg>
                   <div className="download-btn-info">
                     Programme Order Only (2 pages)
-                    <span className="download-btn-sub">Available from 27th June 2026</span>
+                    <span className="download-btn-sub">Available from 30th May 2026</span>
                   </div>
                 </button>
 
@@ -111,7 +111,7 @@ export default function Download() {
                   </svg>
                   <div className="download-btn-info">
                     Full Prize Winners List
-                    <span className="download-btn-sub">Published on 4th July 2026</span>
+                    <span className="download-btn-sub">Published on 6th June 2026</span>
                   </div>
                 </button>
               </div>

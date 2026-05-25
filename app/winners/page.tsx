@@ -1,7 +1,9 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import PageHero from '@/components/PageHero';
+
+const REVEAL = new Date('2026-06-06T15:00:00');
 
 type Filter = 'all' | 'academic' | 'leadership' | 'special' | 'arts';
 
@@ -186,7 +188,64 @@ const filters: { id: Filter; label: string }[] = [
 
 export default function Winners() {
   const [active, setActive] = useState<Filter>('all');
+  const [revealed, setRevealed] = useState(false);
+
+  useEffect(() => {
+    const check = () => setRevealed(Date.now() >= REVEAL.getTime());
+    check();
+    const id = setInterval(check, 30000);
+    return () => clearInterval(id);
+  }, []);
+
   const shown = active === 'all' ? cards : cards.filter(c => c.filter === active);
+
+  if (!revealed) {
+    return (
+      <>
+        <PageHero
+          title="Prize Winners"
+          subtitle="Award Recipients, Speech and Prize Day 2026"
+        />
+        <section className="section">
+          <div className="container">
+            <div style={{
+              textAlign: 'center',
+              padding: '80px 24px',
+              maxWidth: 560,
+              margin: '0 auto',
+            }}>
+              <div style={{
+                width: 72, height: 72, borderRadius: '50%',
+                background: 'var(--surface-2)',
+                border: '1px solid var(--border)',
+                display: 'flex', alignItems: 'center', justifyContent: 'center',
+                margin: '0 auto 28px',
+                fontSize: 28,
+              }}>
+                🔒
+              </div>
+              <h2 style={{
+                fontFamily: 'var(--serif)',
+                fontSize: 'clamp(22px, 3.5vw, 32px)',
+                fontWeight: 700,
+                letterSpacing: '-.02em',
+                color: 'var(--ink)',
+                marginBottom: 16,
+              }}>
+                Results Not Yet Released
+              </h2>
+              <p style={{ fontSize: 15, color: 'var(--body)', lineHeight: 1.8, marginBottom: 8 }}>
+                Prize winners will be revealed here from <strong>3:00 PM on Saturday, 6th June 2026</strong> — one hour after the ceremony closes.
+              </p>
+              <p style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.7 }}>
+                Join us at the Agape New Testament Church, East Legon to witness the announcements live.
+              </p>
+            </div>
+          </div>
+        </section>
+      </>
+    );
+  }
 
   return (
     <>
@@ -205,7 +264,7 @@ export default function Winners() {
               </h2>
               <p>
                 Recipients marked as <strong style={{ color: 'rgba(0,0,0,.5)' }}>To Be Announced</strong> will
-                be revealed during the ceremony on 4th July. All per-grade award winners are
+                be revealed during the ceremony on 6th June. All per-grade award winners are
                 announced live at the ceremony.
               </p>
             </div>

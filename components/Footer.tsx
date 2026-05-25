@@ -29,7 +29,7 @@ export default function Footer() {
           <div className="footer-col">
             <div className="footer-col-heading">The Event</div>
             <a>Annual Speech &amp; Prize Day</a>
-            <a>Friday, 4th July 2026</a>
+            <a>Saturday, 6th June 2026</a>
             <a>Ceremony at 12:00 PM</a>
             <a>Main School Compound</a>
             <a>Accra, Ghana</a>
