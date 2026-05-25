@@ -6,11 +6,12 @@ import { usePathname } from 'next/navigation';
 import Image from 'next/image';
 
 const links = [
-  { href: '/',           label: 'Home' },
-  { href: '/programme',  label: 'Programme' },
-  { href: '/winners',    label: 'Winners' },
-  { href: '/gallery',    label: 'Gallery' },
-  { href: '/download',   label: 'Brochure' },
+  { href: '/',                label: 'Home' },
+  { href: '/programme',       label: 'Programme' },
+  { href: '/winners',         label: 'Winners' },
+  { href: '/gallery',         label: 'Gallery' },
+  { href: '/newsletter',      label: 'Newsletter' },
+  { href: '/announcements',   label: 'Announcements' },
 ];
 
 export default function Nav() {

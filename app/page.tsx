@@ -46,7 +46,7 @@ export default function Home() {
 
           <div className="hero-actions">
             <Link href="/programme" className="btn btn-primary">View Full Programme</Link>
-            <Link href="/download" className="btn btn-outline">Download Brochure</Link>
+            <Link href="/newsletter" className="btn btn-outline">Download Newsletter</Link>
           </div>
 
           <div className="hero-notice">

@@ -23,7 +23,8 @@ export default function Footer() {
             <Link href="/programme">Programme</Link>
             <Link href="/winners">Prize Winners</Link>
             <Link href="/gallery">Gallery</Link>
-            <Link href="/download">Download Brochure</Link>
+            <Link href="/newsletter">Newsletter</Link>
+            <Link href="/announcements">Announcements</Link>
           </div>
 
           <div className="footer-col">
