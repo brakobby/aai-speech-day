@@ -303,6 +303,138 @@ export default function Announcements() {
             </div>
           </div>
 
+          {/* ── Summer School 2026 ── */}
+          <div className="section-header">
+            <p className="eyebrow">Summer Program 2026</p>
+            <h2>Summer <em>School</em></h2>
+            <div className="section-rule" />
+          </div>
+
+          <div style={{
+            border: '1px solid var(--border)',
+            borderRadius: 14,
+            overflow: 'hidden',
+            marginBottom: 64,
+          }}>
+            {/* Header band */}
+            <div style={{
+              background: 'var(--surface-dark)',
+              padding: '40px 52px',
+              borderBottom: '2px solid var(--gold)',
+              display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+              gap: 32, flexWrap: 'wrap',
+            }}>
+              <div>
+                <p style={{
+                  fontSize: 10, fontWeight: 700, letterSpacing: '.22em',
+                  textTransform: 'uppercase', color: 'var(--accent)',
+                  marginBottom: 12,
+                }}>
+                  A Brighter Vacation. A Better Future.
+                </p>
+                <h3 style={{
+                  fontFamily: 'var(--serif)',
+                  fontSize: 'clamp(28px, 4vw, 46px)',
+                  fontWeight: 800, color: '#fff',
+                  lineHeight: 1.05, letterSpacing: '-.03em',
+                  marginBottom: 14,
+                }}>
+                  Summer School<br />
+                  <em style={{ fontWeight: 400, color: 'var(--gold)' }}>2026</em>
+                </h3>
+                <p style={{
+                  fontSize: 15, color: 'rgba(255,255,255,.6)',
+                  lineHeight: 1.7, maxWidth: 460, marginBottom: 0,
+                }}>
+                  A summer of discovery. Skills for today. Success for tomorrow.
+                </p>
+              </div>
+              <div style={{
+                background: 'rgba(255,255,255,.06)',
+                border: '1px solid rgba(255,255,255,.1)',
+                borderRadius: 12, padding: '24px 32px',
+                textAlign: 'center', minWidth: 180,
+              }}>
+                <div style={{ fontSize: 11, letterSpacing: '.14em', textTransform: 'uppercase', color: 'rgba(255,255,255,.45)', marginBottom: 6 }}>Cost</div>
+                <div style={{ fontSize: 36, fontWeight: 800, color: 'var(--gold)', lineHeight: 1, letterSpacing: '-.03em' }}>GHS 800</div>
+                <div style={{ fontSize: 11, color: 'rgba(255,255,255,.5)', marginTop: 6 }}>per week</div>
+                <div style={{
+                  marginTop: 14,
+                  background: 'rgba(255,255,255,.08)',
+                  borderRadius: 6, padding: '6px 14px',
+                  fontSize: 11, color: 'rgba(255,255,255,.55)',
+                  letterSpacing: '.04em',
+                }}>
+                  Limited Spaces
+                </div>
+              </div>
+            </div>
+
+            {/* What we offer */}
+            <div style={{ padding: '36px 52px', borderBottom: '1px solid var(--border)' }}>
+              <p className="eyebrow" style={{ marginBottom: 24 }}>What We Offer</p>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 16 }}>
+                {[
+                  { head: 'Life Skills',      lines: ['Communicate.', 'Lead.', 'Thrive.'] },
+                  { head: 'Mathematics',      lines: ['Think.', 'Solve.', 'Excel.'] },
+                  { head: 'Language Skills',  lines: ['Read.', 'Write.', 'Communicate.'] },
+                  { head: 'Trips',            lines: ['Discover.', 'Explore.', 'Experience.'] },
+                ].map(({ head, lines }) => (
+                  <div key={head} style={{
+                    background: 'var(--surface-2)',
+                    border: '1px solid var(--border)',
+                    borderRadius: 10,
+                    padding: '22px 20px',
+                    borderTop: '2px solid var(--gold)',
+                  }}>
+                    <div style={{
+                      fontFamily: 'var(--serif)',
+                      fontSize: 14, fontWeight: 700,
+                      color: 'var(--ink)', marginBottom: 10,
+                      letterSpacing: '.01em',
+                    }}>
+                      {head}
+                    </div>
+                    {lines.map(l => (
+                      <div key={l} style={{ fontSize: 13, color: 'var(--muted)', lineHeight: 1.7 }}>{l}</div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Details footer */}
+            <div style={{
+              background: 'var(--surface-2)',
+              padding: '28px 52px',
+              display: 'flex', alignItems: 'center',
+              justifyContent: 'space-between',
+              gap: 24, flexWrap: 'wrap',
+              borderTop: '1px solid var(--border)',
+            }}>
+              <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }}>
+                {[
+                  { label: 'Dates',     value: 'June 15 – July 10, 2026' },
+                  { label: 'Drop Off',  value: '7:00 AM' },
+                  { label: 'Pick Up',   value: '3:00 PM' },
+                  { label: 'Venue',     value: 'Agape Academy International' },
+                ].map(({ label, value }) => (
+                  <div key={label}>
+                    <div style={{ fontSize: 10, letterSpacing: '.14em', textTransform: 'uppercase', color: 'var(--muted)', marginBottom: 4 }}>{label}</div>
+                    <div style={{ fontSize: 13.5, fontWeight: 600, color: 'var(--ink)' }}>{value}</div>
+                  </div>
+                ))}
+              </div>
+              <a
+                href="tel:+233554517116"
+                className="btn btn-primary"
+                style={{ fontSize: 13, padding: '10px 22px' }}
+              >
+                Enroll Now — 055 451 7116
+              </a>
+            </div>
+          </div>
+
         </div>
       </section>
     </>
