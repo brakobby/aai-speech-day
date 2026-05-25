@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+  <circle cx="60" cy="60" r="58" fill="#2D0E4A" stroke="#C9A550" stroke-width="2.5"/>
+  <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(201,165,80,0.3)" stroke-width="1"/>
+  <polygon points="60,18 65,34 82,34 68,44 73,60 60,50 47,60 52,44 38,34 55,34" fill="#C9A550" opacity="0.9"/>
+  <rect x="44" y="64" width="32" height="2" fill="#C41E1E" rx="1"/>
+  <text x="60" y="80" text-anchor="middle" fill="#C9A550" font-size="13" font-weight="700" font-family="Georgia,serif" letter-spacing="3">AAI</text>
+  <text x="60" y="92" text-anchor="middle" fill="rgba(255,255,255,0.7)" font-size="6.5" font-family="Arial,sans-serif" letter-spacing="1.5">ACCRA ACADEMY</text>
+  <text x="60" y="102" text-anchor="middle" fill="rgba(255,255,255,0.5)" font-size="6" font-family="Arial,sans-serif" letter-spacing="1">INTERNATIONAL</text>
+</svg>
