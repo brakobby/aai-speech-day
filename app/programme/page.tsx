@@ -363,11 +363,11 @@ export default function Programme() {
 
             <div className="prog-info-card">
               {[
-                { icon: '📅', label: 'Date',        value: 'Friday, 4th July 2026' },
+                { icon: '📅', label: 'Date',        value: 'Friday, 6th June 2026' },
                 { icon: '🕛', label: 'Doors Open',  value: '12:00 PM (Noon)' },
                 { icon: '🕛', label: 'Start',       value: '12:10 PM (Please be seated by 12:05 PM)' },
                 { icon: '🕑', label: 'Close',       value: 'Approximately 2:00 PM' },
-                { icon: '📍', label: 'Venue',       value: 'Main School Compound, AAI' },
+                { icon: '📍', label: 'Venue',       value: 'Agape New Testament Church' },
                 { icon: '🎟', label: 'Admission',   value: 'Open. No tickets required.' },
               ].map(({ icon, label, value }) => (
                 <div key={label} className="pinfo-row">

@@ -33,7 +33,7 @@ export default function Home() {
           <div className="hero-rule" />
 
           <div className="hero-meta-row">
-            <span className="hero-meta-item">4th July 2026</span>
+            <span className="hero-meta-item">6th June 2026</span>
             <span className="hero-meta-sep" />
             <span className="hero-meta-item">12:00 PM</span>
             <span className="hero-meta-sep" />
@@ -69,10 +69,10 @@ export default function Home() {
       <div className="stats-bar">
         <div className="stats-bar-inner">
           {[
-            { n: '28th',   l: 'Annual Edition' },
-            { n: '1,400+', l: 'Students Enrolled' },
-            { n: '70+',    l: 'Award Categories' },
-            { n: '1998',   l: 'Year Founded' },
+            { n: '8th',   l: 'Annual Edition' },
+            { n: '170+', l: 'Students Enrolled' },
+            { n: '10+',    l: 'Award Categories' },
+            { n: '2007',   l: 'Year Founded' },
           ].map(({ n, l }) => (
             <div key={l} className="stat-item">
               <span className="stat-number">{n}</span>
